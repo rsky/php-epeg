@@ -1,7 +1,7 @@
 /**
  * The Epeg PHP extension
  *
- * Copyright (c) 2006-2009 Ryusuke SEKIYAMA. All rights reserved.
+ * Copyright (c) 2006-2010 Ryusuke SEKIYAMA. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -21,11 +21,10 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  *
- * @package     php_epeg
+ * @package     php-epeg
  * @author      Ryusuke SEKIYAMA <rsky0711@gmail.com>
- * @copyright   2006-2009 Ryusuke SEKIYAMA
+ * @copyright   2006-2010 Ryusuke SEKIYAMA
  * @license     http://www.opensource.org/licenses/mit-license.php  MIT License
- * @version     SVN: $Id$
  */
 
 #ifndef _PHP_EPEG_H_
