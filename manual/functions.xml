@@ -1,0 +1,15 @@
+ &reference.epeg.functions.epeg-close;
+ &reference.epeg.functions.epeg-comment-get;
+ &reference.epeg.functions.epeg-comment-set;
+ &reference.epeg.functions.epeg-decode-bounds-set;
+ &reference.epeg.functions.epeg-decode-colorspace-set;
+ &reference.epeg.functions.epeg-decode-size-set;
+ &reference.epeg.functions.epeg-encode;
+ &reference.epeg.functions.epeg-file-open;
+ &reference.epeg.functions.epeg-memory-open;
+ &reference.epeg.functions.epeg-quality-set;
+ &reference.epeg.functions.epeg-size-get;
+ &reference.epeg.functions.epeg-thumbnail-comments-enable;
+ &reference.epeg.functions.epeg-thumbnail-comments-get;
+ &reference.epeg.functions.epeg-thumbnail-create;
+ &reference.epeg.functions.epeg-trim;

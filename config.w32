@@ -1,0 +1,23 @@
+// $ Id: $
+// vim:ft=javascript
+
+// TODO: check for Epeg version
+
+ARG_WITH("epeg", "Epeg support", "yes,shared");
+
+if (PHP_EPEG != "no") {
+
+  if (!CHECK_LIB("jpeg.lib", "epeg", PHP_EPEG)) { 
+    ERROR("epeg: library 'jpeg' not found");
+  }
+
+  if (!CHECK_LIB("epeg.lib", "epeg", PHP_EPEG)) { 
+    ERROR("epeg: library 'epeg' not found");
+  }
+  
+  if (!CHECK_HEADER_ADD_INCLUDE("Epeg.h", "CFLAGS_EPEG")) {
+    ERROR("epeg: header 'Epeg.h' not found");
+  }
+
+  EXTENSION("epeg", "epeg.c");
+}
