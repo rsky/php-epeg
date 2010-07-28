@@ -30,10 +30,6 @@
 #ifndef _PHP_EPEG_H_
 #define _PHP_EPEG_H_
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
@@ -43,28 +39,22 @@ extern "C" {
 #include <SAPI.h>
 #include <ext/standard/info.h>
 #include <Zend/zend_extensions.h>
-#ifdef ZEND_ENGINE_2
 #include <Zend/zend_exceptions.h>
-#endif
 #ifdef ZTS
 #include "TSRM.h"
 #endif
 
-#ifdef __cplusplus
-} // extern "C"
-#endif
 #include <math.h>
 #include <Epeg.h>
-#ifdef __cplusplus
-extern "C" {
-#endif
 
-#define PHP_EPEG_MODULE_VERSION "0.2.1"
+#define PHP_EPEG_MODULE_VERSION "0.3.0"
 
 #define EO_FROM_FILE    (1 << 0)
 #define EO_FROM_BUFFER  (1 << 1)
 #define EO_TO_RESOURCE  (1 << 2)
 #define EO_TO_OBJECT    (1 << 3)
+
+BEGIN_EXTERN_C()
 
 #ifdef PHP_EPEG_ENABLE_DECODE_BOUNDS_SET
 void epeg_decode_bounds_set(Epeg_Image *im, int x, int y, int w, int h);
@@ -90,9 +80,7 @@ typedef struct _php_epeg_object {
 
 /* }}} */
 
-#ifdef __cplusplus
-} // extern "C"
-#endif
+END_EXTERN_C()
 
 #endif /* _PHP_EPEG_H_ */
 
