@@ -832,7 +832,7 @@ static PHP_FUNCTION(epeg_thumbnail_create)
 	int out_file_len = 0;
 	long max_width = 0;
 	long max_height = 0;
-	int quality = 75;
+	long quality = 75;
 
 	/* declaration of the local variables */
 	php_epeg_t *im = NULL;
@@ -916,7 +916,7 @@ static PHP_FUNCTION(epeg_thumbnail_create)
 		/* set output to the buffer */
 		epeg_memory_output_set(im->ptr, &tmp_buf, &tmp_buf_len);
 		/* set quality */
-		epeg_quality_set(im->ptr, quality);
+		epeg_quality_set(im->ptr, (int)quality);
 		/* encode the image and save to the buffer */
 		result = epeg_encode(im->ptr);
 		/* close the Epeg image handle */
